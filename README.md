@@ -10,7 +10,7 @@ CrowdTank is a Solidity-based smart contract that enables decentralized project 
 - ✅ Project creation with title, description, funding goal, and deadline  
 - ✅ Funding from multiple users via ETH  
 - ✅ Automatic tracking of total amount raised  
-- ✅ Contributors can withdraw if funding goal is not reached in time  
+- ✅ Contributors can withdraw if the funding goal is not reached in time  
 - ✅ Project creators can withdraw when the funding goal is met  
 - ✅ Tracks the **highest funder** per project  
 - ✅ Calculates **remaining funding needed**  
@@ -43,7 +43,7 @@ CrowdTank is a Solidity-based smart contract that enables decentralized project 
 ## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/crowdtank.git
+git clone https://github.com/anjalineware/crowdtank.git
 cd crowdtank
 npm install
 ```
@@ -72,43 +72,8 @@ npx hardhat run scripts/deploy-crowdToken.js --network sepolia
 ## 🔍 Verify Contract on Etherscan
 
 ```bash
-npx hardhat verify --network sepolia <DEPLOYED_CONTRACT_ADDRESS>
+npx hardhat verify <DEPLOYED_CONTRACT_ADDRESS> --network sepolia 
 ```
-
----
-
-## ✅ Example Usage
-
-```solidity
-crowdTank.createProject("Save Earth", "Eco awareness campaign", 10 ether);
-crowdTank.fundProject(0, { value: 2 ether });
-uint remaining = crowdTank.getRemainingFunding(0);
-address topFunder = crowdTank.getHighestFunder(0);
-```
-
----
-
-## 📁 Project Structure
-
-```
-crowdtank/
-│
-├── contracts/
-│   └── CrowdTank.sol         # Main smart contract
-│
-├── scripts/
-│   └── deploy-crowdToken.js  # Deployment script
-│
-├── test/                     # Add unit tests here
-├── hardhat.config.js         # Hardhat setup
-└── README.md                 # Project documentation
-```
-
----
-
-## 📷 Screenshots / Demo
-
-> *(Add a screenshot of your verified Etherscan contract or Remix output)*
 
 ---
 
@@ -124,6 +89,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👩‍💻 Author
-
-**Anjali Neware** – [LinkedIn](https://linkedin.com/in/your-profile) • [Twitter](https://twitter.com/your-handle)
