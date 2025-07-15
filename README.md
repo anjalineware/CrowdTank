@@ -43,7 +43,7 @@ CrowdTank is a Solidity-based smart contract that enables decentralized project 
 ## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/anjalineware/crowdtank.git
+git clone https://github.com/anjalineware/CrowdTank.git
 cd crowdtank
 npm install
 ```
